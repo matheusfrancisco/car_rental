@@ -44,9 +44,32 @@ io.on('connection', function(socket){
 
 				}else{
 							console.log(sucess)
+							socket.emit('newaddress', newAddress)
+							CheckBalance(newAddress, socket)
 
 				}
 			})
 		}
 	})
 })
+
+function CheckBalance(addressToCheck, socket)
+{
+	iota.api.getBalances([addressToCheck], 100, function(error,sucess){
+		if (error|| !sucess) {
+			console.log(error)
+		}
+		if (!sucess.balances) {
+			console.log('Missing balances in response')
+		}
+		else
+		{
+			if(success.balance[0]>0)
+			{
+				socket.emit('unlocked', addressToCheck)
+				console.log('Unlocked:'+ addressToCheck)
+			}
+		}
+	})
+
+}
