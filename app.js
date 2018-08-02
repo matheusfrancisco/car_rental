@@ -23,24 +23,30 @@ http.listen(8080, function (){
     console.log("Listening on *:8080")
 })
 
-iota.api.getNewAddress(seed, options, function(error, newAddress){
-	if(error){
-		console.log(error)
-	}
-	else{
-		console.log('New address generated:' + newAddress)
-		const transfers=[{
-			address:newAddress,
-			value:0
-		}]
-		iota.api.sendTransfer(seed, 3,9,transfers,(error,sucess)=>{
-			if (error) {
-						console.log(error)
+var io = require('socket.io')(http)
+//new address alwys to connect
+io.on('connection', function(socket){
+	console.log('connection...')
 
-			}else{
-						console.log(sucess)
+	iota.api.getNewAddress(seed, options, function(error, newAddress){
+		if(error){
+			console.log(error)
+		}
+		else{
+			console.log('New address generated:' + newAddress)
+			const transfers=[{
+				address:newAddress,
+				value:0
+			}]
+			iota.api.sendTransfer(seed, 3,9,transfers,(error,sucess)=>{
+				if (error) {
+							console.log(error)
 
-			}
-		})
-	}
+				}else{
+							console.log(sucess)
+
+				}
+			})
+		}
+	})
 })
