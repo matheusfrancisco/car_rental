@@ -29,9 +29,11 @@ http://0.0.0.0:8080
 http://localhost
 
 #### Interface 
-![img1.jpeg]('Inteface initial')
+![ Inteface initial]('img1.jpeg')
 
-![img2.jpeg]('Inteface initial')
+Genereted new address to payment
+![]('img2.jpeg')
 
+Send to 1 IOTA on testnet iota
+![]('img3.jpeg')
 
-![img3.jpeg]('Inteface initial')
