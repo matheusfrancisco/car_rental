@@ -10,3 +10,20 @@
 #### Creating new addresses
 #### Waiting for payment
 #### Unlock car
+
+
+### How to using
+
+
+Install
+
+npm install express --save
+npm install require --save
+npm install socket.io --save
+npm install iota.lib.js --save
+
+Execute on terminator
+
+node app.js
+http://0.0.0.0:8080 
+http://localhost
