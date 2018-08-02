@@ -34,11 +34,11 @@ http://0.0.0.0:8080
 http://localhost
 
 #### Interface 
-<img src="https://github.com/matheusfrancisco/car_rental_IOTA/blob/master/img1.jpeg" width="600px" />
+<img src="https://github.com/matheusfrancisco/car_rental_IOTA/blob/master/img1.jpeg" width="100px" /><br>
 
 Genereted new address to payment
-<img src="https://github.com/matheusfrancisco/car_rental_IOTA/blob/master/img2.jpeg" width="600px" />
+<img src="https://github.com/matheusfrancisco/car_rental_IOTA/blob/master/img2.jpeg" width="100px" /><br>
 
 Send to 1 IOTA on testnet iota
-<img src="https://github.com/matheusfrancisco/car_rental_IOTA/blob/master/img3.jpeg" width="600px" />
+<img src="https://github.com/matheusfrancisco/car_rental_IOTA/blob/master/img3.jpeg" width="100px" /><br>
 
